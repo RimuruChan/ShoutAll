@@ -1,3 +1,4 @@
 name: ShoutAll
 version: ${project.version}
 main: com.github.Sprite233.shoutall.ShoutAll
+author: Sprite233

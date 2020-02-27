@@ -29,7 +29,7 @@ public class TpCMD extends Command {
             }
         }
 
-        if (data != null && (180 - (int) (System.currentTimeMillis() / 1000 - data.time)) <= 0) {
+        if (data != null && (180 - (int) (System.currentTimeMillis() / 1000 - data.time)) >= 0) {
             ((ProxiedPlayer) sender).connect(ShoutAll.getInstance().getProxy().getServerInfo(data.server));
         } else {
             sender.sendMessage(new TextComponent("§c未知的 Token 或 Token 已失效."));
